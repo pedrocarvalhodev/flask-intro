@@ -1,0 +1,7 @@
+mkdir flask-intro
+virtualenv --no-site-packages venv
+source venv/bin/activate
+pip install flask
+touch app.py
+mkdir static
+mkdir templates
