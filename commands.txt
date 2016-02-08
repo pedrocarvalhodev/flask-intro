@@ -5,3 +5,7 @@ pip install flask
 touch app.py
 mkdir static
 mkdir templates
+
+https://github.com/realpython/discover-flask
+
+
