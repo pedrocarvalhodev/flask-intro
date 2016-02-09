@@ -8,4 +8,7 @@ mkdir templates
 
 https://github.com/realpython/discover-flask
 
+pip install gunicorn
 
+pip freeze > requirements.txt
+# installed ipython in venv - unecessary
