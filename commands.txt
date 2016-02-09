@@ -35,3 +35,18 @@ git commit -am "try/except blocl"
 git push heroku master
 
 heroku run python tests.py -v
+
+# install toolberl for heroku
+wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+
+# foreman
+foreman check
+foreman start
+
+# gunicorn
+gunicorn -b 127.0.0.1:4000 app:app
+
+
+# heroku
+heroku create dsa-basic
+git push heroku master
