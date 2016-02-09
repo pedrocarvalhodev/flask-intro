@@ -12,3 +12,26 @@ pip install gunicorn
 
 pip freeze > requirements.txt
 # installed ipython in venv - unecessary
+
+# git start
+.gitignore : venv, *.pyc
+
+git init
+git add .
+git commit -m "init"
+
+
+## heroku
+heroku create flask-intro
+heroku open (flask-intro.herokuapp.com)
+git push heroku master
+
+# Add dyno
+heroku ps:scale web=1
+heroku ps (check currently running porcesses : web: gunicorn app:app)
+
+git add .
+git commit -am "try/except blocl"
+git push heroku master
+
+heroku run python tests.py -v
