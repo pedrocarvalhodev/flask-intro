@@ -54,3 +54,6 @@ git push heroku master
 
 # Databases
 pip install Flask-SQLAlchemy
+
+# part 10 configuration
+export DATABASE_URL='sqlite:///posts.db
