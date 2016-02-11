@@ -57,3 +57,8 @@ pip install Flask-SQLAlchemy
 
 # part 10 configuration
 export DATABASE_URL='sqlite:///posts.db
+
+
+# part 10 secret key
+import os
+os.uramdom(24)
