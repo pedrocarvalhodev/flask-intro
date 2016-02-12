@@ -62,3 +62,156 @@ export DATABASE_URL='sqlite:///posts.db
 # part 10 secret key
 import os
 os.uramdom(24)
+
+
+# Part 1. Flask app
+mkdir flask-intro
+cd falsk-intro
+virtualenv --no-site-packages venv
+source venv/bin/activate
+pip install flask
+touch app.py
+mkdir static
+mkdir templates
+
+# write app.py
+python app.py
+
+# Part 2 - Create login page
+deactivate
+source venv/bin/activate
+cd templates
+touch login.html
+
+# Part 3 - User Authentication
+source venv/vin/activate
+
+# Part 4 - Templates Inheritance
+source venv/vin/activate
+python app.py
+
+
+# part 5 - Databases
+subli .
+python sql.py
+sqlite3 sample.db
+> select * from posts;
+> insert into posts values("Hello from the shell");
+> select * from posts;
+ipython
+> from app import *
+> c = connect_db()
+> c : <sqlte3...>
+> exit
+
+# Part 6 - List comprehensions
+
+
+# part 7 - Unit tests
+subli .
+python test.py -v
+python app.py
+
+ipython
+> from app import app
+> tester = app.test_client()
+> response = tester.post("/login", data=dict(username="admin", password="admin"), follow_redirects=True)
+
+response
+<Response stremed 200 OK>
+ok
+
+# part 8 - Deploying to Heroku
+heroku login
+Email: pedrocarvalhodev@gmail.com
+pass:...
+
+pip install gunicorn
+gunicorn -b 127.0.0.1:4000 app:app
+
+touch Procfile
+foreman check (sudo apt-get install ruby bundle foreman)
+
+pip freeze > requirements.txt
+touch .gitignore
+
+git init
+git add .
+git commit -m "initial commit"
+
+
+heroku create dsa-basic
+heroku open (application error)
+
+git push heroku master
+heroku ps:scale web=1
+heroku ps
+
+git add .
+git commit -am "try/except black added"
+git push
+
+git push heroku master
+
+# Part 9 SQLAlchemy
+sublim .
+pip install Flask-SQLAlchemy
+
+python db_create.py
+
+ipython
+> from models import BlogPost
+> posts = BlogPost.query.all()
+> posts
+
+
+# Part 10. Configuration
+
+touch config.py (crete configuration python file)
+
+ipython
+> from app import app
+> print app.config (DEBUG: True | False)
+> exit
+
+export APP_SETTINGS="config.DevelopmentConfig"
+
+export DATABASE_URL="SQLITE:///posts.db"
+
+
+# Part 12 Secret Key
+ipython
+> import os
+> os.urandom(24)
+
+
+# part 12 - Heroku configurations settings
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
