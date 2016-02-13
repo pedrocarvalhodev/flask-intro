@@ -186,7 +186,7 @@ ipython
 
 
 # part 12 - Heroku configurations settings
-
+heroku config:set APP_SETTINGS=config.ProductionConfig --remote heroku
 
 
 
