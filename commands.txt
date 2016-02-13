@@ -189,7 +189,13 @@ ipython
 heroku config:set APP_SETTINGS=config.ProductionConfig --remote heroku
 
 
-
+Running python app.py on dsa-basic... up, run.2045
+Traceback (most recent call last):
+  File "app.py", line 5, in <module>
+    from flask.ext.sqlalchemy import SQLAlchemy
+  File "/app/.heroku/python/lib/python2.7/site-packages/flask/exthook.py", line 87, in load_module
+    raise ImportError('No module named %s' % fullname)
+ImportError: No module named flask.ext.sqlalchemy
 
 
 
