@@ -197,9 +197,11 @@ Traceback (most recent call last):
     raise ImportError('No module named %s' % fullname)
 ImportError: No module named flask.ext.sqlalchemy
 
+Solution pip freeze > requirements.txt
 
 
-
+# Create database
+heroku addons:create heroku-postgresql:hobby-dev
 
 
 
