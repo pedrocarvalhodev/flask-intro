@@ -203,7 +203,9 @@ Solution pip freeze > requirements.txt
 # Create database
 heroku addons:create heroku-postgresql:hobby-dev
 
+local
 
+export DATABASE_URL="postgresql://pedro:porto205050@localhost/discover_flask_dev"﻿
 
 
 
