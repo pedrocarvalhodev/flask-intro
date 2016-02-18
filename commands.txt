@@ -208,6 +208,12 @@ local
 export DATABASE_URL="postgresql://pedro:porto205050@localhost/discover_flask_dev"﻿
 
 
+Solved!!
+heroku config:set APP_SETTINGS=config.ProductionConfig --remote heroku
+export DATABASE_URL="postgresql://localhost/discover_flask_dev"
+
+### RUN
+export APP_SETTINGS="config.DevelopmentConfig"
 
 
 
