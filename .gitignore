@@ -4,3 +4,6 @@ venv
 blog
 *.db
 test.py
+private.txt
+app.pyc
+test.py

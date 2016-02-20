@@ -1,0 +1,3 @@
+pwd
+export APP_SETTINGS="config.DevelopmentConfig"
+export DATABASE_URL="postgresql://pedro:porto205050@localhost/disco
