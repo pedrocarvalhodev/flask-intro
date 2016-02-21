@@ -265,6 +265,10 @@ heroku open # open heroku app in the browser
 
 
 
+### part 16
+python manage.py db --help
+
+# add columns "favorite color" in class USER (table)
 
 
 
