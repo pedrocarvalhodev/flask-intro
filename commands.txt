@@ -208,12 +208,62 @@ local
 export DATABASE_URL="postgresql://pedro:porto205050@localhost/discover_flask_dev"﻿
 
 
-Solved!!
+Solved
 heroku config:set APP_SETTINGS=config.ProductionConfig --remote heroku
-export DATABASE_URL="postgresql://localhost/discover_flask_dev"
+#export DATABASE_URL="postgresql://localhost/discover_flask_dev"
+
+Solved!!
+export DATABASE_URL="postgresql+psycopg2://pedro:p25050@127.0.0.1:5432/discover_flask_dev"
 
 ### RUN
 export APP_SETTINGS="config.DevelopmentConfig"
+
+
+Part 15 code
+
+pip install flask-migrate
+pip freeze > requirements.txt
+touch manage.py
+
+python manage.py db init # create folder migrations
+
+python manage.py db migrate # creates migrations folder + versions and 123098sd0fs.py
+
+psql 
+\c discover_flask_dev # connect to database
+
+\d # show tables in database
+
+\d posts # see schema of posts table
+
+select * from posts;
+insert into users values (1, 'admin','admin','admin');
+
+update posts set author_id = 1;
+
+select * from posts; # authro_id is all 1
+
+python manage.py runserver
+
+git add .
+git commit -m "..."
+
+git push heroku master
+heroku run python manage.py db ugrade
+
+heroku pg:psql # connect to heroku postgres
+
+
+\d # already connect to the database
+\d posts
+
+insert into ....
+update posts set author_id=1;
+
+\q
+heroku open # open heroku app in the browser
+
+
 
 
 
